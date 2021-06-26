@@ -28,21 +28,15 @@
         <i class="fas fa-plus-square"></i>
       </button>
       <div class="select">
-        <select name="todos" class="filter-todo" id="">
+        <select name="todos" class="filter-todo" id="filter-todo">
           <option value="all">All</option>
-          <option value="Completed">Completed</option>
-          <option value="Not Completed">Not Completed</option
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Not Completed</option>
         </select>
       </div>
     </form>
     <div class="todo-container">
-      <ul class="todo-list shrink">
-        <!-- <div class="todo">
-          <li class="todo-item">Hey</li>
-          <button class="completed-btn"><i class="fas fa-check"></i></button>
-          <button class="trash-btn"><i class="fas fa-trash"></i></button>
-        </div> -->
-      </ul>
+      <ul class="todo-list"></ul>
     </div>
   </body>
   <script src="./app.js"></script>

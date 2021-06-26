@@ -24,7 +24,7 @@ form {
 
 form input,
 form button {
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1.3rem;
   border: none;
   outline: none;
@@ -122,4 +122,38 @@ ul {
 .fa-trash,
 .fa-check {
   pointer-events: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.select:hover::after {
+  background: #fff;
+  color: #ff6f47;
 }
