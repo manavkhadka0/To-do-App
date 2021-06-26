@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <header>
+      <h1>Manav Todo List</h1>
+    </header>
+    <form action="">
+      <input type="text" class="todo-input" placeholder="Enter Todo..." />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo" id="">
+          <option value="all">All</option>
+          <option value="Completed">Completed</option>
+          <option value="Not Completed">Not Completed</option
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list shrink">
+        <!-- <div class="todo">
+          <li class="todo-item">Hey</li>
+          <button class="completed-btn"><i class="fas fa-check"></i></button>
+          <button class="trash-btn"><i class="fas fa-trash"></i></button>
+        </div> -->
+      </ul>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
